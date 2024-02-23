@@ -15,6 +15,9 @@ html , body{
     height: 100%;
     width: 100%;
 }
+body{
+    position:relative;  
+}
 
 header{
     background-color: var(--primary-color);
@@ -61,7 +64,51 @@ footer{
     padding:var(--padding);
     text-align: center;
     font-size:18px;
-    position:fixed;
+    position:sticky;
     width:100%;
+    z-index:999;
 
+}
+
+/* result div part */
+.result{
+    background-color: #fff;
+    padding:var(--padding);
+    border-radius: var(--border-rad);
+    margin-top:20px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    min-height:10vh;
+}
+.result p{
+    margin-top:10px;
+}
+.result p[class="partofspeech"]{
+    font-style:italic;
+    color:#808080;
+    margin-top:2px;
+}
+.result button{
+    margin-top:5px;
+    border:1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    border-radius:50px;
+    padding:3px 12px;
+    transition:all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+.result button a{
+    text-decoration: none;
+    font-size:14px;
+    color:black;
+    font-weight: 600;
+    transition:all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+ .result button:hover{
+    background-color: var(--primary-color);
+    border:1px solid var(--primary-color);
+}
+.result button a:hover{
+    color:white;
+}
+.result p[class="syns"]{
+    margin-bottom:5px;
 }

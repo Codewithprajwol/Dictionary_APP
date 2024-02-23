@@ -1,0 +1,13 @@
+@media  screen and (max-width:320px) {
+
+    main form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+form button[type="submit"]{
+    margin-left:0px;
+    margin-top: 10px;
+}
+}
